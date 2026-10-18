@@ -1,10 +1,9 @@
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
-    // loop: true,
+    loop: true,
 
     slidesPerView: 'auto',
     centeredSlides: false,
-    spaceBeetween: 16,
 
    pagination: {
     el: '.swiper-pagination',
@@ -13,16 +12,16 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-//   const button = document.getElementById("mybutton");
-// button.addEventListener("click", () => {
-//   alert("Кнопка была кликнута!");
-// });
-// const swiper = new Swiper('.swiper', {
-//   direction: 'horizontal',
-//   loop: true, // бесконечная прокрутка
-//   speed: 5000,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
+
+const button = document.querySelector(".open-btn button");
+button.addEventListener("click", () => {
+  const hiddenSlides = document.querySelectorAll(".swiper-slide-hidden, .swiper-slide-extra");
+  hiddenSlides.forEach(slide => {
+    slide.classList.remove("swiper-slide-hidden", "swiper-slide-extra");
+  });
+  button.style.display = "block";
+  button.textContent = "Скрыть";
+})
+
+
+
