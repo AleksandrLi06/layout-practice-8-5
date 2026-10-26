@@ -81,6 +81,11 @@ button {
     border: none;
     background-color: #F8F8F8;
 }
+
+.btn-icons-open {
+    transform: rotate(180deg);
+}
+
 .swiper-pagination {
     display: none;
 }
@@ -99,6 +104,10 @@ button {
     }
     .swiper-pagination {
     display: none;
+}
+
+.btn-icons-open {
+    transform: rotate(180deg);
 }
 
 }
