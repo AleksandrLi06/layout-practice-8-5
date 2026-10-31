@@ -36,5 +36,3 @@ button.addEventListener("click", () => {
     isHidden = true; 
   }
 });
-
-

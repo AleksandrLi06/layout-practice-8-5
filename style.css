@@ -96,12 +96,7 @@ button {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
-    .swiper-slide-hidden {
-        display: flex;
-    }
-     .swiper-slide-hidden-extra {
-        display: none;
-    }
+     
     .swiper-pagination {
     display: none;
 }
