@@ -100,6 +100,9 @@ button {
     .swiper-pagination {
     display: none;
 }
+.swiper-slide-extra {
+    display: none;
+}
 
 .btn-icons-open {
     transform: rotate(180deg);

@@ -36,3 +36,15 @@ button.addEventListener("click", () => {
     isHidden = true; 
   }
 });
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 1020) {
+    hiddenSlides.forEach(slide => {
+      slide.classList.remove("swiper-slide-hidden");
+    });
+  } else { 
+      hiddenSlides.forEach(slide => {
+        slide.classList.add("swiper-slide-hidden");
+      });
+    }
+});
